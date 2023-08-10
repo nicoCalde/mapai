@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './menu-dropdown.css';
 
-const MenuDropdown = () => {
+const MenuDropdown = ({ handleMenuClick }) => {
     const menuSource=[
         {
             name:'Alojamientos',
@@ -59,7 +59,7 @@ const MenuDropdown = () => {
             name: 'Bares y Cafés',
             menu: [
                 {
-                    menuName:'Bares y cafés',
+                    menuName:'Todos',
                     id:'1cP6lgGJUsw9h2b5K68YHlMSm1rH8DrQ&ehbc=2E312F'
                 },
                 {
@@ -116,34 +116,44 @@ const MenuDropdown = () => {
                 },]
         }
     ]
+    
     const [expandedMenu, setExpandedMenu] = useState('');
 
-  const toggleDropdown = (dropdownName) => {
+    const toggleDropdown = (dropdownName) => {
     setExpandedMenu(expandedMenu === dropdownName ? '' : dropdownName);
-  };
+    };
 
-  return (
-    <div className="menu-dropdown">
-      {menuSource.map((category, index) => (
-        <div key={index} className="menu-category">
-          <div className="category-name" onClick={() => toggleDropdown(category.menu.name)}>
-            {category.name}
-          </div>
-          {expandedMenu === category.name && (
-            <ul className="submenu">
-              {category.menu.map((item, itemIndex) => (
-                <li key={itemIndex}>
-                  <a href={`https://www.google.com/maps/d/u/1/embed?mid=${item.menu.id}`} target="_blank" rel="noopener noreferrer">
-                    {item.menu.menuName}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+    const handleClick  = (id) => {
+        handleMenuClick(id);
+    };
+
+    return (
+        <div className="menu-dropdown">
+            {menuSource.map((category, index) => (
+                <div key={index} className="menu-category">
+                    <div className="category-name" onClick={() => toggleDropdown(category.name)}>
+                        {category.name}
+                    </div>
+                    {expandedMenu === category.name && (
+                        <ul className="submenu">
+                            {category.menu.map((item, itemIndex) => (
+                                <li key={itemIndex}>
+                                    <button
+                                        className="menu-item-button"
+                                        onClick={() => {
+                                            handleClick (item.id);
+                                        }}
+                                    >
+                                        {item.menuName}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default MenuDropdown;
