@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './menu-dropdown.css';
+import logo from '../../assets/img/logo-junto-negro.png'
 
 const MenuDropdown = ({ handleMenuClick }) => {
     const menuSource=[
@@ -129,29 +130,32 @@ const MenuDropdown = ({ handleMenuClick }) => {
 
     return (
         <div className="menu-dropdown">
-            {menuSource.map((category, index) => (
-                <div key={index} className="menu-category">
-                    <div className="category-name" onClick={() => toggleDropdown(category.name)}>
-                        {category.name}
+            <div className="menu-items">
+                <img className='logo-menu' src={logo} alt="AHRCC" />
+                {menuSource.map((category, index) => (
+                    <div key={index} className="menu-category">
+                        <div className="category-name" onClick={() => toggleDropdown(category.name)}>
+                            {category.name} <span>▼</span>
+                        </div>
+                        {expandedMenu === category.name && (
+                            <ul className="submenu">
+                                {category.menu.map((item, itemIndex) => (
+                                    <li key={itemIndex}>
+                                        <button
+                                            className="menu-item-button"
+                                            onClick={() => {
+                                                handleClick (item.id);
+                                            }}
+                                        >
+                                            {item.menuName}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
-                    {expandedMenu === category.name && (
-                        <ul className="submenu">
-                            {category.menu.map((item, itemIndex) => (
-                                <li key={itemIndex}>
-                                    <button
-                                        className="menu-item-button"
-                                        onClick={() => {
-                                            handleClick (item.id);
-                                        }}
-                                    >
-                                        {item.menuName}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
