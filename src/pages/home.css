@@ -19,7 +19,6 @@ body {
 
 .top-left-image {
     max-width: 100px; /* Adjust as needed */
-    z-index: 1;
     margin-top: 84px;
 }
 
@@ -66,4 +65,81 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* CSS for cellphones */
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../assets/img/home-background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+        width: auto;
+        height: 100vh;
+        filter: brightness(80%); /* Adjust the filter as needed */
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .home-container {
+        position: relative;
+        color: white;
+        max-width: 85%;
+        margin: 42px 16px 0 16px; /* Adjust margin for smaller screens */
+    }
+    
+    .top-left-image {
+        margin-top: 42px;
+    }
+
+    .top-left-image>img {
+        width: 200px;
+    }
+    
+    .flex-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px; /* Adjust gap for smaller screens */
+        margin: 66px 16px 0 0; /* Adjust margin for smaller screens */
+    }
+    
+    .text-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px; /* Adjust gap for smaller screens */
+    }
+    
+    .subtitle-container {
+        align-self: stretch;
+        font-size: 20px; /* Adjust font size for smaller screens */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .title-container {
+        align-self: stretch;
+        font-size: 45px; /* Adjust font size for smaller screens */
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+    
+    #link {
+        padding: 10px 42px; /* Adjust padding for smaller screens */
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px; /* Adjust border radius for smaller screens */
+        background: linear-gradient(90deg, #E82B2B 0%, #FFE70E 100%);
+        color: white; /* White color */
+        text-decoration: none; /* Remove underline */
+        font-size: 25px; /* Adjust font size for smaller screens */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import './home.css';
+import logo from '../assets/img/logo-junto.png'; 
 
 function Home() {
   return (
     <div className='home-container'>
         <div className="top-left-image">
-            <img src="" alt="AHRCC" />
+            <img src={logo} alt="AHRCC" />
         </div>
         <div className="flex-container">
             <div className="text-container">
