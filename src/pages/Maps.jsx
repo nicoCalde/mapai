@@ -1,5 +1,5 @@
 import React from 'react'
-import './maps.css';
+import '../assets/style/maps.css';
 
 function Maps() {
   return (
