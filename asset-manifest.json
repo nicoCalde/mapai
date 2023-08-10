@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mapai/static/css/main.6bd25c79.css",
+    "main.js": "/mapai/static/js/main.b402319f.js",
+    "static/js/787.631eed4a.chunk.js": "/mapai/static/js/787.631eed4a.chunk.js",
+    "static/media/home-background.png": "/mapai/static/media/home-background.8cab6d1ed8d9be094153.png",
+    "static/media/logo-junto-negro.png": "/mapai/static/media/logo-junto-negro.dedc5747fd64491e6fb9.png",
+    "static/media/logo-junto.png": "/mapai/static/media/logo-junto.664e75150ef9059da574.png",
+    "index.html": "/mapai/index.html",
+    "main.6bd25c79.css.map": "/mapai/static/css/main.6bd25c79.css.map",
+    "main.b402319f.js.map": "/mapai/static/js/main.b402319f.js.map",
+    "787.631eed4a.chunk.js.map": "/mapai/static/js/787.631eed4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bd25c79.css",
+    "static/js/main.b402319f.js"
+  ]
+}
