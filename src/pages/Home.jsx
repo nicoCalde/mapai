@@ -16,7 +16,7 @@ function Home() {
                     <div className="title-container">Descubrí Buenos Aires con nuestro mapa interactivo</div>
                 </div>
                 <div className="button-container">
-                    <Link id='link' to="/mapas">Ver mapa</Link>
+                    <Link id='link' to="/mapai/mapas">Ver mapa</Link>
                 </div>
             </div>
         </div>

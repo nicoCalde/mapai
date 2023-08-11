@@ -6,9 +6,9 @@ import Maps from '../pages/Maps';
 
 const Routes = () => {
   return (
-    <Switch> {/* Use Switch to ensure only one route is matched */}
-      <Route path='/mapas' component={Maps}/>
-      <Route path='' exact component={Home}/>
+    <Switch>
+      <Route path='/mapai/mapas' component={Maps}/>
+      <Route path='/mapai' exact component={Home}/>
     </Switch>
   );
 }
