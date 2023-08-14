@@ -65,13 +65,25 @@
     line-height: normal;
 }
 
-@media only screen and (max-width:992px) and (min-width: 768px) {
+@media only screen and (max-width:1024px) and (min-width: 768px) {
     .background-container {
-        padding: 60px 32px 0 32px;
+        padding: 60px 44px 0 44px;
     }
 
+    .flex-container {
+        gap: 53px;
+        margin-top: 70px;
+    }
+
+    .text-container {
+        gap: 24px;
+    }
+
+    .subtitle-container {
+        font-size: 22px;
+    }
+    
     .title-container {
-        align-self: stretch;
         font-size: 70px;
         margin-right: 20px;
     }
