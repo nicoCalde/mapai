@@ -7,6 +7,7 @@
     z-index: 2;
     display: grid;
     place-items: center;
+    overflow: auto
 }
 
 .menu-items {
@@ -31,11 +32,11 @@
 }
   
 .category-name {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 10px;
-cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .submenu {
@@ -55,4 +56,32 @@ cursor: pointer;
 
 .menu-item-button:hover {
     font-weight: bold;
+}
+
+@media only screen and (max-width:1024px) and (min-width: 768px) {
+    .menu-items {
+        padding-top: 40px;
+    }
+
+    .logo-menu {
+        position: fixed;
+        width: 150px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-dropdown{
+        width: 70%;
+    }
+
+    .menu-items {
+        padding-top: 65px;
+    }
+
+    .logo-menu {
+        position: fixed;
+        width: 100px;
+        top: 10px;
+    }
 }
