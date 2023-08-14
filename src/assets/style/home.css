@@ -48,6 +48,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    margin-right: 100px;
 }
 
 #link {
@@ -62,6 +63,18 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+@media only screen and (max-width:992px) and (min-width: 768px) {
+    .background-container {
+        padding: 60px 32px 0 32px;
+    }
+
+    .title-container {
+        align-self: stretch;
+        font-size: 70px;
+        margin-right: 20px;
+    }
 }
 
 /* CSS for cellphones */
