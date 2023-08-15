@@ -72,11 +72,11 @@
 
 @media only screen and (max-width: 767px) {
     .menu-dropdown{
-        width: 70%;
+        width: 75%;
     }
 
     .menu-items {
-        padding-top: 65px;
+        padding-top: 50px;
     }
 
     .logo-menu {
