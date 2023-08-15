@@ -65,6 +65,7 @@
     line-height: normal;
 }
 
+/* CSS for medium screens */
 @media only screen and (max-width:1024px) and (min-width: 768px) {
     .background-container {
         padding: 60px 44px 0 44px;
@@ -99,7 +100,7 @@
         overflow: hidden;
         width: auto;
         filter: brightness(80%);
-        padding: 40px 16px 0 16px;
+        padding: 20px 16px 0 16px;
     }
     
     .home-container {
