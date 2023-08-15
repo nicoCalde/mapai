@@ -68,12 +68,12 @@
 /* CSS for medium screens */
 @media only screen and (max-width:1024px) and (min-width: 768px) {
     .background-container {
-        padding: 60px 44px 0 44px;
+        padding: 50px 44px 0 44px;
     }
 
     .flex-container {
         gap: 53px;
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .text-container {
