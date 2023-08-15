@@ -60,7 +60,7 @@
 
 @media only screen and (max-width:1024px) and (min-width: 768px) {
     .menu-items {
-        padding-top: 40px;
+        padding-top: 90px;
     }
 
     .logo-menu {
@@ -76,7 +76,7 @@
     }
 
     .menu-items {
-        padding-top: 50px;
+        padding-top: 90px;
     }
 
     .logo-menu {
