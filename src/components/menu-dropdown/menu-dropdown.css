@@ -3,7 +3,7 @@
     right: 0px;
     background-color: white;
     width: 40%;
-    height: 100vh;
+    height: calc(100vh + 90px);
     z-index: 2;
     display: grid;
     place-items: center;
