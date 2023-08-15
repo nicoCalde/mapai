@@ -55,8 +55,6 @@
 
 @media only screen and (max-width:1024px) and (min-width: 768px) {
     .floating-button {
-        width: 45px;
-        height: 45px;
         top: 20px;
         right: 20px;
     }
