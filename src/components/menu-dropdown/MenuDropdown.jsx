@@ -259,7 +259,7 @@ const MenuDropdown = ({ handleMenuClick }) => {
                         id:'1GWFeMoL2dJsPfccyR7NRLTZZVvYcar4&ehbc=2E312F'
                     },
                     {
-                        option:'Restaurantes',
+                        menuName:'Restaurantes',
                         id:'1g-P36Wn2isFfvcd_5jXLWeXfO0ABZgo&ehbc=2E312F'
                     },
                     ]
