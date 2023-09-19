@@ -8,6 +8,7 @@
     height: 100vh;
     filter: brightness(80%);
     padding: 84px 84px 0 84px;
+    overflow: auto;
 }
 
 .home-container {
