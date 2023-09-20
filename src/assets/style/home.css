@@ -8,7 +8,7 @@
     height: 100vh;
     filter: brightness(80%);
     padding: 84px 84px 0 84px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .home-container {
@@ -26,6 +26,7 @@
     flex-direction: column;
     gap: 56px;
     margin-top: 106px;
+    min-height: 100vh;
 }
 
 .text-container {
