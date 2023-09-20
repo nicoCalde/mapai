@@ -708,36 +708,37 @@ const MenuDropdown = ({ handleMenuClick }) => {
 
     return (
         <div className="menu-dropdown">
-        <div className="menu-items">
-            <img className="logo-menu" src={logo} alt="AHRCC" />
-            <div className="toggle-switch">
-                <span>Filtrar por: </span>
-                <button onClick={toggleDisplay}>{displayZoneMenu ? 'Tipo' : 'Barrio'}</button>
-            </div>
-            {currentMenu.map((category, index) => (
-            <div key={index} className="menu-category">
-                <div className="category-name" onClick={() => toggleDropdown(category.name)}>
-                {category.name} <span>▼</span>
+            <div className="menu-items">
+                <div className="margin-top"></div>
+                <img className="logo-menu" src={logo} alt="AHRCC" />
+                <div className="toggle-switch">
+                    <span>Filtrar por: </span>
+                    <button onClick={toggleDisplay}>{displayZoneMenu ? 'Tipo' : 'Barrio'}</button>
                 </div>
-                {expandedMenu === category.name && (
-                <ul className="submenu">
-                    {category.menu.map((item, itemIndex) => (
-                    <li key={itemIndex}>
-                        <button
-                        className="menu-item-button"
-                        onClick={() => {
-                            handleClick(item.id);
-                        }}
-                        >
-                        {item.menuName}
-                        </button>
-                    </li>
-                    ))}
-                </ul>
-                )}
+                {currentMenu.map((category, index) => (
+                <div key={index} className="menu-category">
+                    <div className="category-name" onClick={() => toggleDropdown(category.name)}>
+                    {category.name} <span>▼</span>
+                    </div>
+                    {expandedMenu === category.name && (
+                    <ul className="submenu">
+                        {category.menu.map((item, itemIndex) => (
+                        <li key={itemIndex}>
+                            <button
+                            className="menu-item-button"
+                            onClick={() => {
+                                handleClick(item.id);
+                            }}
+                            >
+                            {item.menuName}
+                            </button>
+                        </li>
+                        ))}
+                    </ul>
+                    )}
+                </div>
+                ))}
             </div>
-            ))}
-        </div>
         </div>
     );
 };
