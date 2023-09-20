@@ -161,3 +161,34 @@
         line-height: normal;
     }
 }
+
+/* CSS for large screens with low resolution */
+@media only screen and (min-width: 1025px) and (max-resolution: 96dpi) {
+    .background-container {
+        padding: 50px 44px 0 44px;
+    }
+
+    .flex-container {
+        gap: 53px;
+        margin-top: 50px;
+    }
+
+    .text-container {
+        gap: 24px;
+    }
+
+    .subtitle-container {
+        font-size: 22px;
+    }
+    
+    .title-container {
+        font-size: 70px;
+        margin-right: 20px;
+    }
+
+    #link {
+        /* Adjust the padding and font-size as needed for better visibility */
+        padding: 20px 66px;
+        font-size: 30px;
+    }
+}
